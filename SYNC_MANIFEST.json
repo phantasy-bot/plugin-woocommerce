@@ -19,34 +19,15 @@
   "dependencies": [],
   "visibility": "public",
   "repoUrl": "https://github.com/phantasy-bot/plugin-woocommerce",
-  "sourceOfTruth": "monorepo",
-  "sourceOwner": "monorepo",
-  "sourcePayload": "source-extract",
-  "syncMode": "source-extract",
+  "sourceOfTruth": "standalone-repo",
+  "sourceOwner": "standalone-repo",
+  "sourcePayload": "standalone-only",
+  "syncMode": "standalone-repo",
   "phase": "source-extracted",
-  "sourceExtract": {
-    "packageDependencies": {
-      "@phantasy/plugin-sdk": "^0.1.0-beta"
-    },
-    "files": [
-      {
-        "sourcePath": "packages/plugin-woocommerce/src/index.ts",
-        "targetPath": "src/index.ts"
-      },
-      {
-        "sourcePath": "packages/plugin-woocommerce/README.md",
-        "targetPath": "README.md"
-      },
-      {
-        "sourcePath": "packages/plugin-woocommerce/LICENSE",
-        "targetPath": "LICENSE"
-      }
-    ]
-  },
   "repoExists": true,
   "npmPublished": false,
   "runtimeLoadMode": "git",
-  "monorepoPackageStatus": "transitional",
+  "monorepoPackageStatus": "removed",
   "phantasy": {
     "displayName": "WooCommerce",
     "category": "commerce",
