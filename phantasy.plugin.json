@@ -1,0 +1,41 @@
+{
+  "name": "@phantasy/plugin-woocommerce",
+  "version": "0.1.17-beta",
+  "description": "WooCommerce store ops integration for Phantasy agents (catalog, orders, fulfillment).",
+  "displayName": "WooCommerce",
+  "main": "./dist/index.js",
+  "workspace": "business",
+  "extensionKind": "integration",
+  "category": "commerce",
+  "tags": [
+    "woocommerce",
+    "commerce",
+    "store",
+    "orders"
+  ],
+  "permissions": [
+    "internet"
+  ],
+  "dependencies": [],
+  "adminSurface": {
+    "tabId": "woocommerce",
+    "label": "WooCommerce",
+    "workspace": "business",
+    "kind": "generic",
+    "keywords": [
+      "woocommerce",
+      "commerce",
+      "store",
+      "orders"
+    ]
+  },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": true
+      }
+    }
+  }
+}

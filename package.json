@@ -1,0 +1,100 @@
+{
+  "name": "@phantasy/plugin-woocommerce",
+  "version": "0.1.17-beta",
+  "private": false,
+  "description": "WooCommerce store ops integration for Phantasy agents (catalog, orders, fulfillment).",
+  "license": "FSL-1.1-Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "phantasy.plugin.json"
+  ],
+  "sideEffects": false,
+  "keywords": [
+    "woocommerce",
+    "commerce",
+    "store",
+    "orders"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phantasy-bot/plugin-woocommerce"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/phantasy-bot/plugin-woocommerce",
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@phantasy/agent": "^0.1.17-beta"
+  },
+  "peerDependenciesMeta": {
+    "@phantasy/agent": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@phantasy/plugin-sdk": "^0.1.0-beta"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.9.2"
+  },
+  "phantasy": {
+    "displayName": "WooCommerce",
+    "category": "commerce",
+    "tags": [
+      "woocommerce",
+      "commerce",
+      "store",
+      "orders"
+    ],
+    "workspace": "business",
+    "extensionKind": "integration",
+    "permissions": [
+      "internet"
+    ],
+    "pluginDependencies": [],
+    "platforms": [
+      "node"
+    ],
+    "productionReady": true,
+    "adminSurface": {
+      "tabId": "woocommerce",
+      "label": "WooCommerce",
+      "workspace": "business",
+      "kind": "generic",
+      "keywords": [
+        "woocommerce",
+        "commerce",
+        "store",
+        "orders"
+      ]
+    },
+    "configSchema": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  }
+}
